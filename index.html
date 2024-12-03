@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: rgb(209, 197, 197);
+            display: flex;
+            width: 800px;
+            height: 1200px;
+            padding: 3px;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .main > div{
+            background-color: black; 
+            width: 360px;
+            color: palevioletred;
+            padding: 5px;
+            font-size: larger;
+        }
+        #d2{
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin-top: -800px;
+            margin-left: 500px;
+            overflow: scroll;
+            background-color: rgb(32, 52, 183);
+        }
+        .main div:hover{
+            color: chartreuse;
+        }
+        .d1:hover ~ #d2{
+            transform:none;
+            background-color: violet;
+            color: black;
+        }
+       .d11:hover ~ #d2{
+            transform:rotate(10deg);
+            background-color:indigo;
+            color:yellow;
+        }
+        .d12:hover ~ #d2{
+            transform:rotate(45deg);
+            background-color: blue;
+            color: red;
+        }
+        .d13:hover ~ #d2{
+            transform:rotate3d(1,2,1,45deg);
+            background-color:green;
+            color: black;
+        }
+        .d14:hover ~ #d2{
+            transform:rotate3d(0,1,0,60deg);
+            background-color:yellow;
+            color: black;
+        }
+        .d15:hover ~ #d2{
+            transform:rotateX(45deg);
+            background-color: orange;
+            color: black;
+
+        }
+        .d16:hover ~ #d2{
+            transform:rotateX(100deg);
+            background-color: red;
+            color: black;
+        }
+        .d17:hover ~ #d2{
+            transform:rotateY(45deg);
+            background-color:aliceblue;
+            color: black;
+        }
+        .d18:hover ~ #d2{
+            transform:rotateY(80deg);
+            background-color:antiquewhite;
+            color: black;
+        }
+        .d19:hover ~ #d2{
+            transform:rotateZ(45deg);
+            background-color:aqua;
+            color: black;
+        }
+        .d20:hover ~ #d2{
+            transform:rotateZ(90deg);
+            background-color:aquamarine;
+            color: black;
+        }
+        .d21:hover ~ #d2{
+            transform:skew(20deg,20deg);
+            background-color:azure;
+            color: black;
+        }
+        .d22:hover ~ #d2{
+            transform:skew(30deg,30deg);
+            background-color:beige;
+            color: black;
+        }
+        .d23:hover ~ #d2{
+            transform:skewX(30deg);
+            background-color:bisque;
+            color: black;
+        }
+        .d24:hover ~ #d2{
+            transform:skewX(40deg);
+            background-color:black;
+            color:white;
+        }
+        .d25:hover ~ #d2{
+            transform:skewY(30deg);
+            background-color:blanchedalmond;
+            color: black;
+        }
+        .d26:hover ~ #d2{
+            transform:skewY(40deg);
+            background-color:blueviolet;
+            color: black;
+        }
+        .d27:hover ~ #d2{
+            transform:translate(20px,10px);
+            background-color:brown;
+            color:yellow;
+        }
+        .d28:hover ~ #d2{
+            transform:translate(20px,20px);
+            background-color:burlywood;
+            color: black;
+        }
+        .d29:hover ~ #d2{
+            transform:scale(2,2);
+            background-color:cadetblue;
+            color: black;
+        }
+        .d30:hover ~ #d2{
+            transform:scale(2.5,3);
+            background-color:chartreuse;
+            color: black;
+        }
+        .d31:hover ~ #d2{
+            transform:scaleX(1.5);
+            background-color:chocolate;
+            color: black;
+        }
+        .d32:hover ~ #d2{
+            transform:scaleX(50%);
+            background-color:cornflowerblue;
+            color: black;
+        }
+        .d33:hover ~ #d2{
+            transform:scaleY(1.5);
+            background-color:cornsilk;
+            color: black;
+        }
+        .d34:hover ~ #d2{
+            transform:scaleY(50%);
+            background-color:crimson;
+            color: black;
+        }
+        .d35:hover ~ #d2{
+            transform:matrix(0.866,0.7,-0.8,0.866,0,0);
+            background-color:cyan;
+            color: black;
+        }
+        .d36:hover ~ #d2{
+            transform:matrix(0.586,0.8,-0,8,0.586,0,0);
+            background-color:darkblue;
+            color: white;
+        }
+        .d37:hover ~ #d2{
+            transform:matrix(0.586,0.8,-0,8,0.586,40,30);
+        }
+        
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="d1">transform:none;</div>
+        <div class="d11">transform:rotate(10deg);</div>
+        <div class="d12">transform:rotate(45deg);</div>
+        <div class="d13">transform:rotate3d(1,2,1,45deg);</div>
+        <div class="d14">transform:rotate3d(0,1,0,60deg);</div>
+        <div class="d15">transform:rotateX(45deg);</div>
+        <div class="d16">transform:rotateX(100deg);</div>
+        <div class="d17">transform:rotateY(45deg);</div>
+        <div class="d18">transform:rotateY(80deg);</div>
+        <div class="d19">transform:rotateZ(45deg);</div>
+        <div class="d20">transform:rotateZ(90deg);</div>
+        <div class="d21">transform:skew(20deg,20deg);</div>
+        <div class="d22">transform:skew(30deg,30deg);</div>
+        <div class="d23">transform:skewX(30deg);</div>
+        <div class="d24">transform:skewX(40deg);</div>
+        <div class="d25">transform:skewY(30deg);</div>
+        <div class="d26">transform:skewY(40deg);</div>
+        <div class="d27">transform:translate(20px,10px);</div>
+        <div class="d28">transform:translate(20px,20px);</div>
+        <div class="d29">transform:scale(2,2);</div>
+        <div class="d30">transform:scale(2.5,3);</div>
+        <div class="d31">transform:scaleX(1.5);</div>
+        <div class="d32">transform:scaleX(50%);</div>
+        <div class="d33">transform:scaleY(1.5);</div>
+        <div class="d34">transform:scaleY(50%);</div>
+        <div class="d35">transform:matrix(0.866,0.7,-0.8,0.866,0,0);</div>
+        <div class="d36">transform:matrix(0.586,0.8,-0,8,0.586,0,0);</div>
+        <div class="d37">transform:matrix(0.586,0.8,-0,8,0.586,40,30);</div>
+    
+        <div id="d2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ad nulla architecto reiciendis exercitationem blanditiis ipsam, provident ut quia explicabo, amet enim beatae culpa ab dolor quo. Est, fugiat enim?</p>
+        </div>
+</div>
+</body>
+</html>
